@@ -1,0 +1,363 @@
+/* Google Font API */
+.orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body: Dark space background with starry texture */
+body {
+  background: url('images/starry_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #090000;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Game title: Bold, futuristic font with pulsing neon glow */
+.gameName {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 12px #00ffcc, 0 0 24px #00cc99;
+  margin: 20px 0;
+  will-change: text-shadow;
+  animation: pulse 3s infinite;
+}
+
+/* Boujee text: Stylized with neon outline for intro and story */
+.boujee-text {
+  font-family: 'VT323', monospace;
+  font-size: 1.5rem;
+  color: #ff66cc;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #cc3399;
+  margin: 15px auto;
+  max-width: 700px;
+  line-height: 1.4;
+}
+
+/* Article credits: Subtle, metallic look */
+article {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  background: rgba(50, 50, 50, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Buttons: Retro sci-fi with hover and active glow */
+.button, #muteButton, #restart, #toggleAnimations, #dismissError, #startGameButton, #continueButton {
+  background: #1a1a1a;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 12px 24px;
+  margin: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.button:hover, #muteButton:hover, #restart:hover, #toggleAnimations:hover, #dismissError:hover, #startGameButton:hover, #continueButton:hover {
+  background: #00ffcc;
+  color: #1a1a1a;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.button:active, #startGameButton:active, #continueButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.button.selected {
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00cc99;
+  transition: box-shadow 0.5s ease;
+}
+
+/* Mute, Restart, Animations, Dismiss: Distinct colors */
+#muteButton {
+  border-color: #66ccff;
+  color: #66ccff;
+}
+#muteButton:hover {
+  background: #66ccff;
+  color: #1a1a1a;
+  box-shadow: 0 0 15px #66ccff;
+}
+#restart {
+  border-color: #ffcc66;
+  color: #ffcc66;
+}
+#restart:hover {
+  background: #ffcc66;
+  color: #1a1a1a;
+  box-shadow: 0 0 15px #ffcc66;
+}
+#toggleAnimations, #dismissError, #continueButton {
+  border-color: #cc66ff;
+  color: #cc66ff;
+}
+#toggleAnimations:hover, #dismissError:hover, #continueButton:hover {
+  background: #cc66ff;
+  color: #1a1a1a;
+  box-shadow: 0 0 15px #cc66ff;
+}
+
+/* Image container: Fixed aspect ratio for game scene images */
+.image-container {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4 / 3;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#sceneImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #00cc99;
+  border-radius: 5px;
+  display: block;
+}
+
+/* Image wrapper: Specific sizing for start screen image */
+#imageWrapper {
+  width: 100%;
+  max-width: 250px; /* Constrain Seaton.jpg size */
+  margin: 20px auto;
+  position: relative;
+}
+
+#initialImage {
+  width: 100%;
+  max-height: 250px; /* Limit height for start screen */
+  object-fit: cover;
+  border: 3px solid #00cc99;
+  border-radius: 5px;
+  display: block;
+}
+
+/* Scene card: CRT-like display for story text */
+.scene-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #00cc99;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px #00cc99;
+}
+
+/* Story text: Inside scene card */
+#storyText {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* Choice card: Interactive, neon-bordered cards */
+.choice-card {
+  background: #1a1a1a;
+  color: #00ffcc;
+  border: 2px solid #00cc99;
+  padding: 12px;
+  margin: 10px 0;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.choice-card:hover {
+  background: #00ffcc;
+  color: #1a1a1a;
+  box-shadow: 0 0 15px #00cc99;
+}
+
+.choice-card.selected {
+  box-shadow: 0 0 15px #00cc99, 0 0 30px #00cc99;
+  transition: box-shadow 0.5s ease;
+}
+
+/* Start screen: Centered with semi-transparent background */
+#startScreen {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Intro content: Similar to start screen but with fade-in */
+#introContent {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Game content: Main gameplay area */
+#game {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Rovol’s dialogue: Subtle neon glow for wisdom */
+#storyText.rovol {
+  will-change: text-shadow;
+  animation: wisdomGlow 2s infinite;
+}
+
+/* Choices: Grid layout for cards */
+#choices {
+  display: grid;
+  gap: 10px;
+  margin: 15px auto;
+  max-width: 600px;
+}
+
+/* Score display: HUD-like, fixed position */
+#scoreDisplay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ffcc;
+  padding: 5px 10px;
+  border: 1px solid #00cc99;
+  border-radius: 5px;
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+}
+
+/* Error display: CRT-like, centered below story */
+#errorDisplay {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #ff66cc;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border: 2px solid #ff66cc;
+  border-radius: 5px;
+  margin: 10px auto;
+  max-width: 600px;
+  text-shadow: 0 0 5px #ff66cc;
+  display: none;
+}
+#errorDisplay.active {
+  display: block;
+}
+
+/* Inventory display: HUD-like, hidden by default */
+#inventoryDisplay {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ffcc;
+  padding: 5px 10px;
+  border: 1px solid #00cc99;
+  border-radius: 5px;
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+  display: none;
+}
+#inventoryDisplay.active {
+  display: block;
+}
+
+/* Hidden class for toggling visibility */
+.hidden {
+  display: none;
+}
+
+/* Disable animations when toggled off */
+.no-animations .gameName, .no-animations #storyText.rovol {
+  animation: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .gameName {
+    font-size: 2.5rem;
+  }
+  .boujee-text {
+    font-size: 1.2rem;
+  }
+  #storyText {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  .choice-card, #muteButton, #restart, #toggleAnimations, #dismissError, #startGameButton, #continueButton {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+  #choices {
+    grid-template-columns: 1fr;
+  }
+  #startScreen, #introContent, #game {
+    padding: 15px;
+    margin: 10px;
+  }
+  .image-container, #imageWrapper {
+    max-width: 100%;
+  }
+  #initialImage {
+    max-height: 180px;
+  }
+  #errorDisplay, #inventoryDisplay {
+    font-size: 1rem;
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+
+/* Fade-in animation for intro */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Pulse animation for game title */
+@keyframes pulse {
+  0% { text-shadow: 0 0 12px #00ffcc; }
+  50% { text-shadow: 0 0 16px #00ffcc; }
+  100% { text-shadow: 0 0 12px #00ffcc; }
+}
+
+/* Wisdom glow for Rovol’s dialogue */
+@keyframes wisdomGlow {
+  0% { text-shadow: 0 0 5px #ff66cc; }
+  50% { text-shadow: 0 0 10px #ff66cc; }
+  100% { text-shadow: 0 0 5px #ff66cc; }
+}
+
+@keyframes tauntFlicker {
+  0% { text-shadow: 0 0 5px #ff3333; }
+  50% { text-shadow: 0 0 10px #ff3333; }
+  100% { text-shadow: 0 0 5px #ff3333; }
+}
+#storyText.duquesne {
+  animation: tauntFlicker 1.5s 1;
+}

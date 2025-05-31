@@ -1,0 +1,305 @@
+{
+  "title": "Skylark Legacy: Norlamin Gambit",
+  "initialScene": "scene1",
+  "initialState": {
+    "inventory": [],
+    "alignment": "Seaton",
+    "score": 0
+  },
+  "scenes": {
+    "scene1": {
+      "id": "scene1",
+      "description": "Neon arcs weave through crystalline conduits, their hum a symphony of sixth-order energies in a Norlaminian lab. You are Richard Seaton, restored from the void’s entropic currents by Rovol, the energy master, his silver eyes serene yet grave. ‘Seaton,’ he intones, voice steady as a cosmic tide, ‘your form was dispersed, yet our matrices have harmonized your essence. Ponder this: DuQuesne, in his ambition, wields a device to bind Dorothy’s will, a perversion of our science. We must counter this affront to harmony.’ Your heart races, Dorothy’s smile vivid. ‘DuQuesne’s slick,’ you growl, ‘but he’s not slick enough to pull that on me!’ The *DQ*, forged from Rovol’s betrayed wisdom, nears Norlamin. ‘Power is for those who take it,’ DuQuesne taunts via broadcast. Will you pursue or prepare?",
+      "image": "images/scene1_revival.jpg",
+      "scoreChange": 0,
+      "choices": [
+        {
+          "text": "Say ‘Let’s give ’er the juice and see what she’ll do!’ and board the Skylark of Valeron.",
+          "nextScene": "scene2",
+          "stateChange": { "inventory": ["sixth_order_projector"] }
+        },
+        {
+          "text": "Consult Rovol to craft a device to neutralize DuQuesne’s tech.",
+          "nextScene": "scene3",
+          "stateChange": { "inventory": ["norlaminian_analyzer"] }
+        }
+      ]
+    },
+    "scene2": {
+      "id": "scene2",
+      "description": "The *Skylark of Valeron*’s controls thrum, its mechanical brain alive with sixth-order pulses. ‘Full speed ahead, and damn the torpedoes!’ you declare, memories of crushing the Fenachrone planet flashing by. A Chloran scout ship intercepts, cannons aglow. DuQuesne’s voice crackles through: ‘You’re predictable, Seaton. That’s why you’ll lose.’ The *Skylark*’s projectors hum, ready for war or flight. Dorothy’s fate pulls you forward. Will you fight or evade?",
+      "image": "images/norlamin_approach.jpg",
+      "scoreChange": 10,
+      "choices": [
+        {
+          "text": "Engage the Chloran ship with sixth-order projectors.",
+          "nextScene": "scene4",
+          "stateChange": { "score": 10 }
+        },
+        {
+          "text": "Evade the Chlorans and race to Norlamin.",
+          "nextScene": "scene5",
+          "stateChange": { "score": 5 }
+        }
+      ]
+    },
+    "scene3": {
+      "id": "scene3",
+      "description": "Rovol’s lab shimmers with sixth-order filaments, their buzz a cosmic rhythm. ‘In my zeal to share knowledge, I erred, Seaton,’ Rovol confesses, his voice a measured cadence. ‘DuQuesne extracted principles of our science, forging the *DQ*’s might. Reflect: only a counter-device, attuned to his frequencies, can restore Dorothy’s autonomy.’ You nod, muttering, ‘The odds are a million to one against us, but we’ve got a fighting chance, and that’s all I need—let’s give ‘em hell!’ A holo-screen flares with DuQuesne’s taunt: ‘Go ahead and play the hero, Seaton—it’ll make crushing you all the more satisfying!’ An alarm signals the *DQ*’s arrival. Time presses, yet Rovol’s calm urges focus. Will you finish the device or confront DuQuesne?",
+      "image": "images/norlamin_lab.jpg",
+      "scoreChange": 10,
+      "choices": [
+        {
+          "text": "Stay and complete the counter-device with Rovol.",
+          "nextScene": "scene6",
+          "stateChange": { "inventory": ["counter_device"] }
+        },
+        {
+          "text": "Rush to intercept DuQuesne at the wedding venue.",
+          "nextScene": "scene7",
+          "stateChange": { "score": 5 }
+        }
+      ]
+    },
+    "scene4": {
+      "id": "scene4",
+      "description": "Your *Skylark*’s projectors obliterate the Chloran ship in a sixth-order blaze, but the battle delays you. ‘No time to loaf—let’s slam the juice to her and burn through!’ you mutter, docking at Norlamin. The *DQ*’s hull glints near the wedding venue, guarded by duped Norlaminians, their batons crackling. DuQuesne’s broadcast sneers, ‘Checkmate, old man—did you think I’d leave a loose end?’ Dorothy’s distorted pleas echo. Will you infiltrate or challenge the guards?",
+      "image": "images/DuQuesne_101.jpg",
+      "scoreChange": 10,
+      "choices": [
+        {
+          "text": "Pose as DuQuesne’s ally to infiltrate the venue.",
+          "nextScene": "scene8",
+          "stateChange": { "score": 5 }
+        },
+        {
+          "text": "Declare your mission to stop the wedding.",
+          "nextScene": "scene9",
+          "stateChange": { "score": 10 }
+        }
+      ]
+    },
+    "scene5": {
+      "id": "scene5",
+      "description": "The *Skylark* dances through Chloran fire, Norlamin in sight. ‘Full speed ahead, and damn the torpedoes!’ you shout, outpacing the enemy. The *DQ* looms, its sixth-order aura menacing. Dorothy’s warped voice pleads for the wedding, overlaid with DuQuesne’s: ‘Power is for those who take it.’ Your hands grip the controls, the *Skylark*’s brain ready. Can you disrupt his tech or face him directly?",
+      "image": "images/dq_ship.jpg",
+      "scoreChange": 5,
+      "choices": [
+        {
+          "text": "Hack the *DQ*’s mechanical brain to stop the broadcast.",
+          "nextScene": "scene10",
+          "stateChange": { "score": 10 }
+        },
+        {
+          "text": "Land and confront DuQuesne at the venue.",
+          "nextScene": "scene11",
+          "stateChange": { "score": 5 }
+        }
+      ]
+    },
+    "scene6": {
+      "id": "scene6",
+      "description": "The counter-device pulses, its sixth-order circuits complete. ‘The device is complete, Seaton,’ Rovol intones, his voice a steady beacon. ‘Its resonance will unravel DuQuesne’s control. Proceed with care, for the cosmos balances on your resolve.’ You grin, ‘Crack the powie, let’s hit the ether and see what this baby can do!’ Guards ambush you, batons flaring, as DuQuesne’s holo-taunt sneers, ‘You’re predictable, Seaton. That’s why you’ll lose.’ The counter-device could neutralize their weapons, or your projectors could blaze through. Dorothy awaits. What’s your move?",
+      "image": "images/norlamin_battle.jpg",
+      "scoreChange": 20,
+    "choices": [
+  {
+    "text": "Use the counter-device to disable the guards’ weapons.",
+    "nextScene": "scene12",
+    "stateChange": { "score": 15 },
+    "condition": { "inventory": "counter_device" }
+  },
+  {
+    "text": "Attempt to negotiate with the guards.",
+    "nextScene": "scene7",
+    "stateChange": { "score": 5 }
+  }
+]
+    },
+    "scene7": {
+      "id": "scene7",
+      "description": "You storm the venue, but without the counter-device, DuQuesne’s tech clouds your senses. Dorothy stands at the altar, eyes vacant. ‘Break it up, Blackie! Or I'll give you a run for your money!’ you begin, but the *DQ*’s barrier traps you. DuQuesne laughs, ‘Checkmate, Seaton—did you think I’d leave a loose end?’ The wedding proceeds, and your vision fades. The galaxy falls. Game over!",
+      "image": "images/DuQuesne_101.jpg",
+      "scoreChange": -20,
+      "choices": [
+        {
+          "text": "Restart the adventure.",
+          "nextScene": "scene1"
+        }
+      ]
+    },
+    "scene8": {
+      "id": "scene8",
+      "description": "You slip into the wedding hall, sixth-order crystals pulsing like stars. Dorothy stands entranced by a humming emitter. DuQuesne, in *DQ* armor, smirks, ‘You’re a persistent pest, Seaton, I’ll give you that—but pests get swatted eventually’ You mutter, ‘All right, DuQuesne, you’ve played your hand—now let’s see how you like a full-power punch!’ Sensors sweep, threatening exposure. Your projector could disrupt the emitter, or a distraction might buy time. What’s your plan?",
+      "image": "images/wedding_hall.jpg",
+      "scoreChange": 15,
+      "choices": [
+        {
+          "text": "Say ‘Let’s give ’er the juice!’ and disrupt the emitter with the projector.",
+          "nextScene": "scene12",
+          "stateChange": { "score": 10 },
+          "condition": { "inventory": "sixth_order_projector" }
+        },
+        {
+          "text": "Overload a crystal conduit for a distraction.",
+          "nextScene": "scene13",
+          "stateChange": { "score": 5 }
+        }
+      ]
+    },
+    "scene9": {
+      "id": "scene9",
+      "description": "Norlaminian guards block the venue, batons crackling. ‘I’ve got a hunch we can lick this yet!’ you declare, eyeing the glowing entrance. Dorothy’s distorted voice echoes, with DuQuesne’s: ‘Power is for those who take it.’ The guards brand you a traitor, but an elder lingers, his gaze thoughtful. Your projector could clear the path, or words might sway him. How will you reach Dorothy?",
+      "image": "images/norlamin_plaza.jpg",
+      "scoreChange": 10,
+      "choices": [
+        {
+          "text": "Blast through with the sixth-order projector.",
+          "nextScene": "scene14",
+          "stateChange": { "score": 5 },
+          "condition": { "inventory": "sixth_order_projector" }
+        },
+        {
+          "text": "Appeal to the elder to expose DuQuesne’s lies.",
+          "nextScene": "scene15",
+          "stateChange": { "score": 10 }
+        }
+      ]
+    },
+    "scene10": {
+      "id": "scene10",
+      "description": "In the *Skylark*’s cockpit, you hack the *DQ*’s brain, fingers dancing. ‘Full speed ahead, and damn the torpedoes!’ you grin as systems flicker. DuQuesne’s voice cuts in: ‘You’re predictable, Seaton. That’s why you’ll lose.’ A sixth-order firewall triggers an alarm, guards converging. Will you push the hack or infiltrate on foot?",
+      "image": "images/dq_cockpit.jpg",
+      "scoreChange": 10,
+      "choices": [
+        {
+          "text": "Force the hack to disrupt the broadcast.",
+          "nextScene": "scene12",
+          "stateChange": { "score": 15 }
+        },
+        {
+          "text": "Abandon the hack and sneak into the venue.",
+          "nextScene": "scene8",
+          "stateChange": { "score": 5 }
+        }
+      ]
+    },
+    "scene11": {
+      "id": "scene11",
+      "description": "You charge the venue, projector ready. ‘DuQuesne’s slick, but he’s not slick enough!’ you snarl. Guards swarm, and DuQuesne taunts, ‘Checkmate, old man—did you think I’d leave a loose end?’ The *DQ*’s barrier slows you, Dorothy’s cries piercing the chaos. Without the counter-device, victory is slim. Will you fight or regroup?",
+      "image": "images/norlamin_battle.jpg",
+      "scoreChange": 5,
+      "choices": [
+        {
+          "text": "Fight through with the sixth-order projector.",
+          "nextScene": "scene7",
+          "stateChange": { "score": 5 },
+          "condition": { "inventory": "sixth_order_projector" }
+        },
+        {
+          "text": "Retreat to find Rovol and plan anew.",
+          "nextScene": "scene3",
+          "stateChange": { "score": 10 }
+        }
+      ]
+    },
+    "scene12": {
+      "id": "scene12",
+      "description": "At the altar, Dorothy’s eyes flicker, your counter-device humming. Crystals dim as the emitter falters. DuQuesne steps forward, gauntlet glowing. ‘Checkmate, Seaton,’ he sneers, ‘did you think I’d leave a loose end?’ You retort, ‘I’ve got a hunch we can lick this yet!’ His barrier blocks you, but the device could free Dorothy or disable his gauntlet. Time’s short. What’s your move?",
+      "image": "images/final_confrontation.jpg",
+      "scoreChange": 20,
+      "choices": [
+  {
+    "text": "Activate the counter-device to free Dorothy’s mind.",
+    "nextScene": "scene16",
+    "stateChange": { "score": 15 },
+    "condition": { "inventory": "counter_device" }
+  },
+  {
+    "text": "Target DuQuesne’s gauntlet to weaken his barrier.",
+    "nextScene": "scene17",
+    "stateChange": { "score": 10 },
+    "condition": { "inventory": "counter_device" }
+  },
+  {
+    "text": "Try to confront DuQuesne without the counter-device.",
+    "nextScene": "scene7",
+    "stateChange": { "score": -5 }
+  }
+]
+    },
+    "scene13": {
+      "id": "scene13",
+      "description": "Sparks fly as you overload a conduit, guards scattering. ‘That’s a load off my mind!’ you quip, but DuQuesne’s sensors lock on. His *DQ* projects a net, pinning you. ‘Power is for those who take it,’ he laughs as Dorothy, entranced, recites vows. The wedding seals his rule, and your mission fails. Game over!",
+      "image": "images/game_over_wedding.jpg",
+      "scoreChange": -20,
+      "choices": [
+        {
+          "text": "Restart the adventure.",
+          "nextScene": "scene1"
+        }
+      ]
+    },
+    "scene14": {
+      "id": "scene14",
+      "description": "Your projector roars, scattering guards in a sixth-order blaze. ‘Let’s give ’er the juice and see what she’ll do!’ you shout, charging the venue. DuQuesne’s voice booms, ‘You’re predictable, Seaton. That’s why you’ll lose.’ His *DQ* activates a trap, slowing you. Dorothy’s cries fade. Without the counter-device, reaching her is tough. Will you push on or find another way?",
+      "image": "images/norlamin_battle.jpg",
+      "scoreChange": 5,
+      "choices": [
+        {
+          "text": "Push through to the altar.",
+          "nextScene": "scene7",
+          "stateChange": { "score": 5 }
+        },
+        {
+          "text": "Find a side entrance to avoid the trap.",
+          "nextScene": "scene8",
+          "stateChange": { "score": 10 }
+        }
+      ]
+    },
+    "scene15": {
+      "id": "scene15",
+      "description": "The Norlaminian elder’s robes shimmer, his gaze echoing Rovol’s calm wisdom. ‘DuQuesne’s slick, but he’s not slick enough to pull that on me!’ you say, citing Rovol’s teachings on harmony to expose DuQuesne’s lies. DuQuesne’s broadcast interrupts: ‘The galaxy bends to those who control the mind.’ The elder nods, granting access as guards stand down. Dorothy’s voice falters inside. Will you rush to her or sabotage the *DQ* with the elder’s aid?",
+      "image": "images/norlamin_elder.jpg",
+      "scoreChange": 15,
+      "choices": [
+        {
+          "text": "Rush to Dorothy at the altar.",
+          "nextScene": "scene12",
+          "stateChange": { "score": 10 },
+          "condition": { "inventory": "counter_device" }
+        },
+        {
+          "text": "Work with the elder to sabotage the *DQ*.",
+          "nextScene": "scene10",
+          "stateChange": { "score": 15 }
+        }
+      ]
+    },
+    "scene16": {
+      "id": "scene16",
+      "description": "The counter-device flares, shattering DuQuesne’s control. Dorothy’s eyes clear, and she runs to you, crying, ‘Oh, Dick, you always come through—I never doubted you!’ You grin, ‘That’s a load off my mind—now let’s get to work!’ DuQuesne’s gauntlet fails, and elders restrain him. Dorothy adds, ‘Let’s go home, darling—no more galaxy-saving for a while!’ The galaxy is safe, and love triumphs. Victory!",
+      "image": "images/victory_reunion.jpg",
+      "scoreChange": 50,
+      "choices": [
+        {
+          "text": "Restart the adventure.",
+          "nextScene": "scene1"
+        }
+      ]
+    },
+    "scene17": {
+      "id": "scene17",
+      "description": "The counter-device disables DuQuesne’s gauntlet, his barrier collapsing. ‘I’ve got a hunch we can lick this yet!’ you shout as guards attempt to seize DuQuesne who narrowly escapes. Dorothy, freed, stumbles to you, whispering, ‘Oh, Dick, you always come through!’ The *DQ* escapes, a lingering threat. ‘We’ll be ready,’ you vow. Dorothy smiles, ‘Let’s go home, darling.’ The galaxy is safe—for now. Victory!",
+      "image": "images/partial_victory.jpg",
+      "scoreChange": 40,
+      "choices": [
+        {
+          "text": "Restart the adventure.",
+          "nextScene": "scene1"
+        }
+      ]
+    }
+  }
+}

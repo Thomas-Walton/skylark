@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skylark Legacy: Norlamin Gambit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="myAudio" loop>
+    <source src="sounds/background_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h1 class="gameName">Skylark Legacy: Norlamin Gambit</h1>
+  <article>
+    Demo written by Thomas P. Walton.<br>
+    Art Director K. A.<br>
+    Produced by Viking Rocker.<br>
+    Based on the Skylark Series by E.E. 'Doc' Smith.
+  </article>
+
+  <div id="startScreen">
+    <div id="imageWrapper">
+      <img src="images/Seaton.jpg" id="initialImage" alt="Game start image" >
+    </div>
+    <p class="boujee-text">Lead Seaton to victory in a cosmic quest!</p>
+    <button id="startGameButton">Start Game!</button>
+  </div>
+
+  <div id="saveGame">
+    <button id="saveGameButton">Save Game!</button>
+  </div>
+
+  <div id="introContent" class="hidden">
+    <p class="boujee-text">
+      Welcome to Skylark Legacy: Norlamin Gambit! As Richard Seaton, revived by Norlaminian technology, you must race to Norlamin to save your wife Dorothy from Dr. Marc DuQuesne’s mind-altering control and stop his wedding that threatens the galaxy. Your choices shape the fate of the cosmos!
+    </p>
+    <button id="continueButton">Continue</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <div class="image-container">
+      <img id="sceneImage" src="images/fallback_scene.jpg" alt="Scene image">
+    </div>
+    <div id="scene" class="scene-card">
+      <p id="storyText"></p>
+      <div id="choices"></div>
+    </div>
+  </div>
+
+  <div id="scoreDisplay">Score: 0</div>
+  <div id="inventoryDisplay">Items: None</div>
+  <button id="muteButton">Mute</button>
+  <button id="restart">Restart</button>
+  <button id="toggleAnimations">Animations: On</button>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
